@@ -3,6 +3,8 @@ Webex Bot to Retrieve Meraki Dashboard Data
 
 This is a Webex Meraki-Bot.JS bot application project built using the [Webex-Bot-Starter](https://github.com/WebexSamples/webex-bot-starter) as a template and AI (ChatGPT) to work out the specific codes. It uses the [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-bot-framework) which simplifies developemnt for Webex bots.
 
+This project is run using websocket instead of webhook which requires an inbound, internet reachable port for the Webex API to notify Framework of webhook events.  With websocket, this applications can be deployed behind firewalls and removes the requirement that webex bots and integrations must expose a public IP address to receive events.
+
 # Overview
 
 This bot application uses the API from [Meraki Dashboard API](https://developer.cisco.com/meraki/api-v1/).
@@ -29,14 +31,18 @@ Image below show a direct interaction with the bot:
 Image below show interaction with the bot in a group space:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
 
-# Next Step Guide
+# How to update or expand the code
 
-The project is written in blocks of code for each of the API calls.  Depending on the use cases and the availability of the Meraki Dashboard API, each block can be duplicated and updated with the new API.
+The project is written in blocks of code for each of the API calls.  Depending on the use cases and the availability of the Meraki Dashboard API, each block can be duplicated and updated with the new API OR deleted if not needed.
 <img width="1040" alt="image" src="https://github.com/user-attachments/assets/ff1e60b5-24be-4170-b011-73f058b5c1a8" />
 
-One of the propose of this project is to provide a reference code for anyone to use and build on depending on their use cases and requirements.  This project is created with the help of AI (ChatGPT) 
+One of the propose of this project is to provide a reference code for anyone to use and build on depending on their use cases and requirements.  
 
+This project is created with the help of AI (ChatGPT).  For someone not skilled in coding, you can use AI (ChatGPT) to help you but some level of troubleshooting will be needed as AI (ChatGPT) may not provide an errorless code.
 
+As an example, you can ask AI (CHatGPT) "Can you provide the code using Webex-Node-Bot-Framework for a Webex Bot to return the result from Meraki Dashboard API https://developer.cisco.com/meraki/api-v1/get-organization-summary-top-appliances-by-utilization/"
+
+OR you can also copy a block of the code in Meraki-Bot.JS and ask AI (ChatGPT) to update it using another Meraki Dashboard API.
 
 
 # Disclaimer
