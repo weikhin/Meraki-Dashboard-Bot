@@ -9,9 +9,9 @@ This bot application uses the API from [Meraki Dashboard API](https://developer.
 
 To run the application you will need to update the Meraki-Bot.JS with the following:
 
- 1. orgId - The specific Meraki Org ID that you are running the queries on.
- 2. merakiApiKey - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
- 3. token - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
+ 1. **orgId** - The specific Meraki Org ID that you are running the queries on.
+ 2. **merakiApiKey** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
+ 3. **token** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
 
 
