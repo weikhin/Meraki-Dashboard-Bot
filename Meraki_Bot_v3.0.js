@@ -1,9 +1,9 @@
 var Framework = require('webex-node-bot-framework');
-var axios = require("axios");
+var axios = require("axios"); // npm install axios
 var QuickChart = require('quickchart-js'); // npm install quickchart-js
 var ACData = require("adaptivecards-templating"); // npm install adaptivecards-templating
-var orgId = '537758'; // Replace with your specific Org ID
-var merakiApiKey = '40ab3b2bc53f0b17768bd1d5e1d401c8d803b588'; // Replace with your Meraki API key
+var orgId = '######'; // Replace with your specific Org ID
+var merakiApiKey = '############################################'; // Replace with your Meraki API key
 var merakiBaseUrl = 'https://api.meraki.com/api/v1';
 
 
@@ -11,10 +11,8 @@ var merakiBaseUrl = 'https://api.meraki.com/api/v1';
 
 // framework options
 var config = {
-  // No webhookUrl, webhookSecret, or port needed
-//  token: 'MDY3YWY1NGUtNTU3Ny00ZWFhLWE1YjItMTI3ZjMzNGVhYjVkNWNjYTJlZDQtZjc4_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f' //dtmeraki1@webex.bot
-//   token: 'MWU5ZmE5MGUtZGU5Mi00NDczLWE2ODgtZTFiNmY1YzVhNDEwOWU3YTFiZmMtMmNh_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f' //dtwebsocket1@webex.bot
-    token: 'MzgyNTIzNWItZmNiYy00NDRhLWIwMmUtMWY0OTY4ZTYyMTUzMjc4ZDExMGMtMjgx_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f' //dtmeraki2@webex.bot
+// No webhookUrl, webhookSecret, or port needed
+   token: '##############################################################################################################' //Replace with your Bot Token
 };
 
 // init framework
@@ -50,13 +48,13 @@ framework.on('spawn', (bot, id, addedBy) => {
 // way to troubleshoot issues.
 // You may wish to disable this for production apps
 
-/*
+
 framework.on("log", (msg) => {
     console.log(msg);
   });
-*/
 
-  // Process incoming messages
+
+// Process incoming messages
 // Each hears() call includes the phrase to match, and the function to call if webex mesages
 // to the bot match that phrase.
 // An optional 3rd parameter can be a help string used by the frameworks.showHelp message.
@@ -240,7 +238,7 @@ framework.hears("Utilization", async (bot, trigger) => {
 
 
   /* On mention with command
-  ex User enters @botname boot, the bot will reply with the devices boots history the last 24 hrs
+  ex User enters @botname boot, the bot will reply with the devices boots history the last 7 days
   */
   
   framework.hears("BOOT", async (bot, trigger) => {
@@ -541,7 +539,7 @@ framework.hears("API", async (bot, trigger) => {
   const data = response.data;
       const responseCodeCounts = data.responseCodeCounts;
 
-      // Prepare Data for the Chart, filtering out zero values
+  // Prepare Data for the Chart, filtering out zero values
   const filteredData = Object.entries(responseCodeCounts).filter(([code, count]) => count > 0);
 
   // Separate the filtered data into labels and values
@@ -551,7 +549,7 @@ framework.hears("API", async (bot, trigger) => {
   // console.log('Filtered Labels:', labels);
   // console.log('Filtered Values:', values);
 
-      // Create Chart with QuickChart
+    // Create Chart with QuickChart
       const chart = new QuickChart();
       chart
           .setConfig({
