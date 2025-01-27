@@ -29,6 +29,12 @@ Image below show a direct interaction with the bot:
 Image below show interaction with the bot in a group space:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
 
+# Next Step Guide
+
+The project is written in blocks of code for each of the API calls.  Depending on the use cases and the availability of the Meraki Dashboard API, each block can be duplicated and updated with the new API.
+<img width="1040" alt="image" src="https://github.com/user-attachments/assets/ff1e60b5-24be-4170-b011-73f058b5c1a8" />
+
+One of the propose of this project is to provide a reference code for anyone to use and build on depending on their use cases and requirements.  This project is created with the help of AI (ChatGPT) 
 
 
 
