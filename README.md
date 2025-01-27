@@ -23,13 +23,19 @@ To run the application you will need to update the Meraki-Bot.JS with the follow
  2. **merakiApiKey** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
  3. **token** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
-Once the application is running (node Meraki-Bot.JS), you can interact with the bot either by adding it to a space or messaging to the bot directly
+Once the application is running (node Meraki-Bot.JS), you can interact with the bot either by adding it to a space & @botname or messaging to the bot directly
 
 Image below show a direct interaction with the bot:
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/a3b9e714-d445-4247-ad6d-b9a8c1237825" />
 
 Image below show interaction with the bot in a group space:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
+
+The bot will response with data return from the API in statistics/value format or it can also be presented in a chart format where applicable.
+
+Image below is an example of a response in chart format where is shows the Api requests overview in the last 1 day:
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/c13dc122-58d0-4f6e-8528-b49e3215f369" />
+
 
 # How to update or expand the code
 
@@ -43,6 +49,9 @@ This project is created with the help of AI (ChatGPT).  For someone not skilled 
 As an example, you can ask AI (CHatGPT) "Can you provide the code using Webex-Node-Bot-Framework for a Webex Bot to return the result from Meraki Dashboard API https://developer.cisco.com/meraki/api-v1/get-organization-summary-top-appliances-by-utilization/"
 
 OR you can also copy a block of the code in Meraki-Bot.JS and ask AI (ChatGPT) to update it using another Meraki Dashboard API.
+
+# How to Limit Bot Access to Specific Spaces or Users
+
 
 
 # Disclaimer
