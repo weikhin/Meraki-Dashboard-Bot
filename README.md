@@ -21,9 +21,15 @@ To run the application you will need to update the Meraki-Bot.JS with the follow
  2. **merakiApiKey** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
  3. **token** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
-The 
+Once the application is running (node Meraki-Bot.JS), you can interact with the bot either by adding it to a space or messaging to the bot directly
 
+Image below show a direct interaction with the bot:
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/a3b9e714-d445-4247-ad6d-b9a8c1237825" />
+
+Image below show interaction with the bot in a group space:
+<img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
+
+
 
 
 
