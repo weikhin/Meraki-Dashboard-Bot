@@ -1,4 +1,4 @@
-# Meraki-Bot
+# Meraki-Dashboard-Bot
 Webex Bot to Retrieve Meraki Dashboard Data
 
 This is a Webex Meraki-Bot.JS bot application project built using the [Webex-Bot-Starter](https://github.com/WebexSamples/webex-bot-starter) as a template and AI (ChatGPT) to work out the specific codes. It uses the [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-bot-framework) which simplifies developemnt for Webex bots.
