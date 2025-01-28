@@ -11,7 +11,7 @@ This bot application uses the API from [Meraki Dashboard API](https://developer.
 
 Install [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-bot-framework) following the installation steps in it.  
 
-Additional modules will need to be install to run Meraji-Bot.JS:
+Additional modules will need to be install to run `Meraki-Bot.JS`:
 
  - `npm install axios`
  - `npm install quickchart-js`
