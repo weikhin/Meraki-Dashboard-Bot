@@ -19,9 +19,9 @@ Additional modules will need to be install to run Meraji-Bot.JS:
 
 To run the application you will need to update the `Meraki-Bot.JS` with the following:
 
- 1. **orgId** - The specific Meraki Org ID that you are running the queries on.
- 2. **merakiApiKey** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
- 3. **token** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
+ 1. **`orgId`** - The specific Meraki Org ID that you are running the queries on.
+ 2. **`merakiApiKey`** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
+ 3. **`token`** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
 Once the application is running (`node Meraki-Bot.JS`), you can interact with the bot either by adding it to a space & @botname or messaging to the bot directly
 
