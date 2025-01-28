@@ -64,7 +64,7 @@ OR you can also copy a block of the code in `Meraki-Bot.JS` and ask AI (ChatGPT)
 
 By default, when a bot is created, anyone can interact with with it or add it to a room.  Even if Webex Messaging interaction is restriction to within the organisation, anyone in the organisation can also interaction with it.  
 
-**`Restricted_Bot.js`** is a sample code where the rooms and users that can interact with the bot is listed in the code.  When the code is initiated, it will check and remove the bot from any existing room that is not listed in the code.  If the bot is subsequently added to a room not listed, the code will automatically removed the bot from the room.  Users not listed will not be able to interact with the bot directly. 
+**`Restricted_Bot.js`** is a sample code where the rooms and users that can interact with the bot is listed in the code.  When the code is initiated, it will check and remove the bot from any existing room that is not listed in the code.  If the bot is subsequently added to a room that is not listed, the code will automatically removed the bot from the room.  Users not listed will not be able to interact with the bot directly. 
 
 Image below show an example of a user interaction with the bot that is rejected:
 
