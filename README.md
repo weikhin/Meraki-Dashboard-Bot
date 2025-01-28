@@ -23,12 +23,12 @@ To run the application you will need to update the `Meraki-Bot.JS` with the foll
  2. **`merakiApiKey`** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
  3. **`token`** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
-Once the application is running (`node Meraki-Bot.JS`), you can interact with the bot either by adding it to a space & @botname or messaging to the bot directly
+Once the application is running (`node Meraki-Bot.JS`), you can interact with the bot either by adding it to a room & @botname or messaging to the bot directly
 
 Image below show a direct interaction with the bot:
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/a3b9e714-d445-4247-ad6d-b9a8c1237825" />
 
-Image below show interaction with the bot in a group space:
+Image below show interaction with the bot in a group room:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
 
 The bot will response with data in statistics/value format or it can also be presented in a chart format where applicable.
@@ -60,13 +60,14 @@ As an example, you can ask AI (CHatGPT) "Can you provide the code using Webex-No
 
 OR you can also copy a block of the code in `Meraki-Bot.JS` and ask AI (ChatGPT) to update it using another Meraki Dashboard API.
 
-# How to Limit Bot Access to Specific Spaces or Users
+# How to Limit Bot Access to Specific Rooms or Users
 
 By default, when a bot is created, anyone can interact with with it or add it to a room.  Even if Webex Messaging interaction is restriction to within the organisation, anyone in the organisation can also interaction with it.  
 
 **`Restricted_Bot.js`** is a sample code where rooms and users that can interact with the bot is listed in the code.  When the code is initiated, it will check and remove the bot from any existing room that is not listed in the code.  If the bot is subsequently added to a room not listed, the code will automatically removed the bot from the room.  Users not listed will not be able to interact with the bot directly. 
 
 Image below show an example of a user interaction with the bot that is rejected:
+
 <img width="431" alt="image" src="https://github.com/user-attachments/assets/e435616d-ef24-409a-a7d9-ead6d7fffa35" />
 
 
