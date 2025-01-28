@@ -72,7 +72,7 @@ Image below show an example of a user interaction with the bot that is rejected:
 
 
 # Disclaimer
-This script is NOT guaranteed to be bug free and production quality.
+This code is NOT guaranteed to be bug free and production quality.
 
 
 
