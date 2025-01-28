@@ -36,7 +36,7 @@ The bot will response with data in statistics/value format or it can also be pre
 Image below is an example of a response in statistics/value format:
 <img width="602" alt="image" src="https://github.com/user-attachments/assets/147b9874-0c2a-47c5-9b74-607fd2461acc" />
 
-Image below is an example of a response in chart format where is shows the Api requests overview in the last 1 day:
+Image below is an example of a response in chart format where it shows the Api requests overview in the last 1 day:
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/c13dc122-58d0-4f6e-8528-b49e3215f369" />
 
 Images below is an example of how the bot can provide selection from a drop down list and return response from the selected option:
