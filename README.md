@@ -28,7 +28,7 @@ Once the application is running (`node Meraki-Bot.JS`), you can interact with th
 Image below show a direct interaction with the bot:
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/a3b9e714-d445-4247-ad6d-b9a8c1237825" />
 
-Image below show interaction with the bot in a group room:
+Image below show interaction with the bot in a room:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
 
 The bot will response with data in statistics/value format or it can also be presented in a chart format where applicable.
