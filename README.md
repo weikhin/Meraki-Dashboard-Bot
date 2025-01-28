@@ -31,10 +31,20 @@ Image below show a direct interaction with the bot:
 Image below show interaction with the bot in a group space:
 <img width="631" alt="image" src="https://github.com/user-attachments/assets/df92bb1b-e7be-4cf7-bf12-bb93a6fdb8f7" />
 
-The bot will response with data return from the API in statistics/value format or it can also be presented in a chart format where applicable.
+The bot will response with data in statistics/value format or it can also be presented in a chart format where applicable.
+
+Image below is an example of a response in statistics/value format:
+<img width="602" alt="image" src="https://github.com/user-attachments/assets/147b9874-0c2a-47c5-9b74-607fd2461acc" />
 
 Image below is an example of a response in chart format where is shows the Api requests overview in the last 1 day:
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/c13dc122-58d0-4f6e-8528-b49e3215f369" />
+
+Images below is an example of how the bot can provide selection from a drop down list and return response from the selected option:
+<img width="514" alt="image" src="https://github.com/user-attachments/assets/89492088-9ff0-4cb9-8c82-2231251c86a2" />
+
+<img width="501" alt="image" src="https://github.com/user-attachments/assets/9f2f662b-714b-4703-8ec3-a69515e24c1e" />
+
+<img width="563" alt="image" src="https://github.com/user-attachments/assets/51ae15e3-49f2-43e0-84a4-ea7a32988d37" />
 
 
 # How to update or expand the code
