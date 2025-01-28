@@ -1,7 +1,7 @@
 # Meraki-Dashboard-Bot
 Webex Bot to Retrieve Meraki Dashboard Data
 
-This is a Webex Meraki-Bot.JS bot application project built using the [Webex-Bot-Starter](https://github.com/WebexSamples/webex-bot-starter) as a template and AI (ChatGPT) to work out the specific codes. It uses the [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-bot-framework) which simplifies developemnt for Webex bots.
+This is a Webex `Meraki-Bot.JS` bot application project built using the [Webex-Bot-Starter](https://github.com/WebexSamples/webex-bot-starter) as a template and AI (ChatGPT) to work out the specific codes. It uses the [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-bot-framework) which simplifies developemnt for Webex bots.
 
 This project is run using websocket instead of webhook which requires an inbound, internet reachable port for the Webex API to notify Framework of webhook events.  With websocket, this applications can be deployed behind firewalls and removes the requirement that webex bots and integrations must expose a public IP address to receive events.
 
@@ -13,17 +13,17 @@ Install [Webex-Node-Bot-Framework](https://github.com/WebexCommunity/webex-node-
 
 Additional modules will need to be install to run Meraji-Bot.JS:
 
- - npm install axios
- - npm install quickchart-js
- - npm install adaptivecards-templating
+ - `npm install axios`
+ - `npm install quickchart-js`
+ - `npm install adaptivecards-templating`
 
-To run the application you will need to update the Meraki-Bot.JS with the following:
+To run the application you will need to update the `Meraki-Bot.JS` with the following:
 
  1. **orgId** - The specific Meraki Org ID that you are running the queries on.
  2. **merakiApiKey** - This is the Meraki Administrator API key. This API key will be associated with the dashboard administrator account which generates it and will inherit the same permissions as that account. Use a Read-Only administrator API key if you do not want the bot to execute any changes to your Meraki Org
  3. **token** - This is the Bot token for the [Webex Bot](https://developer.webex.com/docs/bots)
 
-Once the application is running (node Meraki-Bot.JS), you can interact with the bot either by adding it to a space & @botname or messaging to the bot directly
+Once the application is running (`node Meraki-Bot.JS`), you can interact with the bot either by adding it to a space & @botname or messaging to the bot directly
 
 Image below show a direct interaction with the bot:
 <img width="654" alt="image" src="https://github.com/user-attachments/assets/a3b9e714-d445-4247-ad6d-b9a8c1237825" />
@@ -58,15 +58,16 @@ This project is created with the help of AI (ChatGPT).  For someone not skilled 
 
 As an example, you can ask AI (CHatGPT) "Can you provide the code using Webex-Node-Bot-Framework for a Webex Bot to return the result from Meraki Dashboard API https://developer.cisco.com/meraki/api-v1/get-organization-summary-top-appliances-by-utilization/"
 
-OR you can also copy a block of the code in Meraki-Bot.JS and ask AI (ChatGPT) to update it using another Meraki Dashboard API.
+OR you can also copy a block of the code in `Meraki-Bot.JS` and ask AI (ChatGPT) to update it using another Meraki Dashboard API.
 
 # How to Limit Bot Access to Specific Spaces or Users
 
-By default, when a bot is created, anyone can interact with with it or add it to a space if the organisation does not restrict Webex Messaging to within the organisation.  Even if Webex Messaging interaction is restriction to within the organisation, anyone in the organisation can also interaction with it.  
+By default, when a bot is created, anyone can interact with with it or add it to a room.  Even if Webex Messaging interaction is restriction to within the organisation, anyone in the organisation can also interaction with it.  
 
-**`Restricted_Bot.js`** is a sample code where spaces and users that can interact with the code is listed in the code.  The bot will be automatically removed from space not listed if it is being added to it.  Users not listed will not be able to interact with the bot directly. 
+**`Restricted_Bot.js`** is a sample code where rooms and users that can interact with the bot is listed in the code.  When the code is initiated, it will check and remove the bot from any existing room that is not listed in the code.  If the bot is subsequently added to a room not listed, the code will automatically removed the bot from the room.  Users not listed will not be able to interact with the bot directly. 
 
-
+Image below show an example of a user interaction with the bot that is rejected:
+<img width="431" alt="image" src="https://github.com/user-attachments/assets/e435616d-ef24-409a-a7d9-ead6d7fffa35" />
 
 
 # Disclaimer
